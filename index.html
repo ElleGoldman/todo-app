@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4a00b3ebdd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <header>
+                <h1>My To-Do List</h1>
+                <time datetime="2022-03-22 10:00">03 March 2022</time>
+            </header>
+            <div class="searchbar">
+                <form action="/action_page.php">
+                    <input type="text" id="search" name="search" placeholder="Search">
+                    <button class="search-button" type="Submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <ul class="task-list">
+                <li>
+                    <span class="task-status"></span>
+                    <p class="task-title">Task 1</p>
+                    <div class="task-actions">
+                        <button class="is-edit"><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button class="is-copy"><i class="fa-solid fa-copy"></i></button>
+                        <button class="is-danger"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </li>
+                <li>
+                    <span class="task-status"></span>
+                    <p class="task-title">Task 2</p>
+                    <div class="task-actions">
+                        <button class="is-edit"><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button class="is-copy"><i class="fa-solid fa-copy"></i></button>
+                        <button class="is-danger"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </li>
+                <li>
+                    <span class="task-status"></span>
+                    <p class="task-title">Here can be some long title task</p>
+                    <div class="task-actions">
+                        <button class="is-edit"><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button class="is-copy"><i class="fa-solid fa-copy"></i></button>
+                        <button class="is-danger"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </li>
+                <li>
+                    <span class="task-status"></span>
+                    <p class="task-title">Task 4</p>
+                    <div class="task-actions">
+                        <button class="is-edit"><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button class="is-copy"><i class="fa-solid fa-copy"></i></button>
+                        <button class="is-danger"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </li>
+                <li class="is-completed">
+                    <span class="task-status">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <p class="task-title">Task 5</p>
+                    <div class="task-actions">
+                        <button class="is-danger"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </li>
+            </ul>
+            <footer>
+                <button class="add-task"><i class="fa-solid fa-circle-plus"></i> Add </button>
+            </footer>
+        </div>
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>
