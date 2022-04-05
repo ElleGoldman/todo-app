@@ -81,6 +81,7 @@ searchInput.addEventListener('input', searchTodo);
 const addButton = document.getElementById('add');
 function addTodo() {
     const title = window.prompt('Enter Title')
+    if(!title) return
     todos.unshift({
         title: title,
         isCompleted: false,
